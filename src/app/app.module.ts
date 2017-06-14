@@ -14,7 +14,9 @@ import { RepoListComponent } from './github/repo-list/repo-list.component';
 import { RepoDetailComponent } from './github/repo-detail/repo-detail.component';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { ContactComponent } from './contact/contact.component';
+import { DragulaModule } from 'ng2-dragula';
 
+import {ImageCropperComponent, CropperSettings} from 'ng2-img-cropper';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,13 +25,15 @@ import { ContactComponent } from './contact/contact.component';
     RepoListComponent,
     RepoDetailComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    ImageCropperComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
+    DragulaModule,
     RouterModule.forRoot(rootRouterConfig, { useHash: true })
   ],
   providers: [
