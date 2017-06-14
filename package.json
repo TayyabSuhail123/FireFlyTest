@@ -5,6 +5,7 @@
   "scripts": {
     "build": "webpack --progress",
     "watch": "npm run build -- --watch",
+    "chalo": "npm run build && node server.js",
     "server": "webpack-dev-server --inline --progress --port 3000 --host 0.0.0.0 --content-base src",
     "start": "npm run server"
   },
@@ -27,8 +28,10 @@
     "@angular/upgrade": "~2.2.1",
     "angular2-in-memory-web-api": "0.0.21",
     "angular2-resizing-cropping-image": "^1.0.0-final.4",
+    "body-parser": "^1.17.2",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
+    "express": "^4.15.3",
     "ie-shim": "^0.1.0",
     "ng2-dragula": "^1.5.0",
     "ng2-img-cropper": "^0.8.8",
